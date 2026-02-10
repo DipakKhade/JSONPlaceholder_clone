@@ -3,10 +3,10 @@ use serde::Serialize;
 
 #[derive(Debug, Clone, Serialize)]
 pub struct Post {
-    user_id: i32,
-    id: i32,
-    title: String,
-    body: String
+    pub user_id: i32,
+    pub id: i32,
+    pub title: String,
+    pub body: String
 }
 
 #[derive(Debug, Clone, Serialize)]
