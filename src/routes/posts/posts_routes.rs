@@ -1,12 +1,12 @@
 
-use poem::{Route, handler};
+use poem::{Route, get, handler};
 
-pub async fn posts_routes() -> Route {
-    Route::new().at("/", get_all_posts)
+pub fn posts_routes() -> Route {
+    Route::new().at("/", get(get_all_posts))
 }
 
 
 #[handler]
 async fn get_all_posts() -> &'static str {
-    "asd"
+    "All posts"
 }
