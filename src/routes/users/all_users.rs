@@ -1,29 +1,29 @@
 
-struct User {
-    id: i32,
-    name: String,
-    email: String,
-    address: Address,
-    phone: String,
-    website: String,
-    company: Company
+pub struct User {
+    pub id: i32,
+    pub name: String,
+    pub email: String,
+    pub address: Address,
+    pub phone: String,
+    pub website: String,
+    pub company: Company
 }
 
-struct Address {
-    street: String,
-    suite: String,
-    city: String,
-    zipcode: String,
-    geo: GeoLocation
+pub struct Address {
+    pub street: String,
+    pub suite: String,
+    pub city: String,
+    pub zipcode: String,
+    pub geo: GeoLocation
 }
 
-struct GeoLocation {
-    lat: String,
-    lng: String
+pub struct GeoLocation {
+    pub lat: String,
+    pub lng: String
 }
 
-struct Company {
-    name: String,
-    catchPhrase: String,
-    bs: String
+pub struct Company {
+    pub name: String,
+    pub catchPhrase: String,
+    pub bs: String
 }
