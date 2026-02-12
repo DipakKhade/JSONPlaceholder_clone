@@ -1,4 +1,7 @@
+use serde::Serialize;
 
+
+#[derive(Debug, Clone, Serialize)]
 pub struct User {
     pub id: i32,
     pub name: String,
@@ -9,6 +12,7 @@ pub struct User {
     pub company: Company
 }
 
+#[derive(Debug, Clone, Serialize)]
 pub struct Address {
     pub street: String,
     pub suite: String,
@@ -17,17 +21,20 @@ pub struct Address {
     pub geo: GeoLocation
 }
 
+#[derive(Debug, Clone, Serialize)]
 pub struct GeoLocation {
     pub lat: String,
     pub lng: String
 }
 
+#[derive(Debug, Clone, Serialize)]
 pub struct Company {
     pub name: String,
     pub catch_phrase: String,
     pub bs: String
 }
 
+#[derive(Debug, Clone, Serialize)]
 pub struct AllUsers {
     pub users: Vec<User>
 }
