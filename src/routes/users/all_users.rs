@@ -28,6 +28,7 @@ pub struct GeoLocation {
 }
 
 #[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
 pub struct Company {
     pub name: String,
     pub catch_phrase: String,

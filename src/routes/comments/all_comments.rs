@@ -2,6 +2,7 @@ use serde::Serialize;
 
 
 #[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
 pub struct Comment {
     pub post_id: i32,
     pub id: i32,
